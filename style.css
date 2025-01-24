@@ -385,6 +385,29 @@
 .story-4 button{
     background-color: rgba(149, 178, 38, 1);
 }
+.marquee {
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee p {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 1.4rem;
+    color: #333;
+    animation: scroll-left 15s linear infinite;
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
 /* Responsive styles for mobile screens  */
 @media (max-width: 576px) {
     .navbar {
